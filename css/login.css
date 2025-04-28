@@ -1,0 +1,99 @@
+@font-face {
+    font-family: klein ;
+    src: url("klein/Klein-Text-Book-trial.ttf");
+}
+
+
+/* Full-page background */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('dudle.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Adding a black overlay to reduce brightness */
+.bg-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 0; /* Ensure overlay sits behind the login container */
+}
+
+/* Login container styling */
+.login-container {
+    background: white; /* Light background for login box */
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    z-index: 1; /* Ensure the container stays above the overlay */
+    
+}
+
+/* Logo positioning */
+.logo-container {
+    margin-bottom: 20px; /* Adds space between logo and welcome text */
+}
+
+.top-left-logo {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Welcome text styling */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: Klein;
+}
+
+/* Styling for input fields and button */
+.form-control {
+    margin-bottom: 15px;
+}
+
+.btn.login-btn {
+    background-color: black;
+    color: white;
+    width: 32%;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn.login-btn:hover {
+    background-color: #000000;
+}
+
+
+.btn.signup-btn {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}

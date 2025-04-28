@@ -1,0 +1,12 @@
+
+    .product-title {
+        font-weight: bold; /* Make the title bold */
+        color: black; /* Set the color to black */
+        margin-bottom: 5px; /* Space between title and price */
+        font-size: 2rem; /* Optional: adjust font size */
+    }
+    .price-tag {
+        font-weight: bold; /* Make the price bold */
+        color: black; /* Set the price color to black */
+        font-size: 1.2rem; /* Slightly larger font size for price */
+    }
